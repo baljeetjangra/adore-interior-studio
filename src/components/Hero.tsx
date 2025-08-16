@@ -1,13 +1,15 @@
-import React from 'react'
-import { Phone } from 'lucide-react'
-import HeroThreeElements from './HeroThreeElements'
+import { Phone } from "lucide-react";
+import HeroThreeElements from "./HeroThreeElements";
 
 const Hero = () => {
   return (
-    <section id="home" className="relative h-screen flex items-center justify-center overflow-hidden">
+    <section
+      id="home"
+      className="relative h-screen flex items-center justify-center overflow-hidden"
+    >
       {/* Three.js Background Elements */}
       <HeroThreeElements />
-      
+
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
         <img
@@ -30,17 +32,21 @@ const Hero = () => {
           <p className="text-lg md:text-xl mb-8 max-w-2xl mx-auto leading-relaxed">
             Transform your dream home interior with us
           </p>
-          
+
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-            <a 
+            <a
               href="tel:9999067234"
               className="flex items-center space-x-3 bg-addore-accent text-white px-8 py-4 rounded-lg hover:bg-opacity-90 transition-all duration-300 transform hover:scale-105 shadow-lg"
             >
               <Phone size={20} />
               <span className="text-lg font-medium">Call Us Now</span>
             </a>
-            <button 
-              onClick={() => document.getElementById('about')?.scrollIntoView({ behavior: 'smooth' })}
+            <button
+              onClick={() =>
+                document
+                  .getElementById("about")
+                  ?.scrollIntoView({ behavior: "smooth" })
+              }
               className="border-2 border-white text-white px-8 py-4 rounded-lg hover:bg-white hover:text-addore-secondary transition-all duration-300"
             >
               Learn More
@@ -56,7 +62,7 @@ const Hero = () => {
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default Hero
+export default Hero;
