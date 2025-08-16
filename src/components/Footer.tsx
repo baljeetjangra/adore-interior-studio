@@ -61,10 +61,21 @@ const Footer = () => {
         </div>
 
         {/* Bottom Strip */}
-        <div className="border-t border-addore-accent border-opacity-20 mt-8 pt-8 text-center">
+        <div className="border-t border-addore-accent border-opacity-20 mt-8 pt-8 text-center space-y-2">
           <p className="text-addore-warm-gray text-sm">
             © 2025 Addore Interior Studio. All rights reserved. Designed with ❤️
             for beautiful spaces.
+          </p>
+          <p className="text-xs text-addore-warm-gray">
+            Crafted by{" "}
+            <a
+              href="https://www.linkedin.com/in/baljeetjangra/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-addore-accent hover:underline"
+            >
+              Baljeet Jangra
+            </a>
           </p>
         </div>
       </div>
